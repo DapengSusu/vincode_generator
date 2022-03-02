@@ -9,6 +9,6 @@ pub enum GeneratorError {
     UnknownCaseType(String),
     #[error("Parse string `{0}` to an integer failed")]
     StringToIntError(String),
-    // #[error("unknown error")]
-    // Unknown,
+    #[error("unknown error")]
+    Unknown,
 }
