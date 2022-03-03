@@ -9,6 +9,8 @@ pub enum GeneratorError {
     UnknownCaseType(String),
     #[error("Parse string `{0}` to an integer failed")]
     StringToIntError(String),
+    #[error("File `{0}` does not exist")]
+    WrongFilePath(String),
     #[error("unknown error")]
     Unknown,
 }
